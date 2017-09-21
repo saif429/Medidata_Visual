@@ -1,207 +1,310 @@
 <!DOCTYPE html>
-<html>
-    
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>GETTING STARTED WITH BRACKETS</title>
-        <meta name="description" content="An interactive getting started guide for Brackets.">
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
-        
-        <h1>GETTING STARTED WITH BRACKETS</h1>
-        <h2>This is your guide!</h2>
-        
-        <!--
-            MADE WITH <3 AND JAVASCRIPT
-        -->
-        
-        <p>
-            Welcome to Brackets, a modern open-source code editor that understands web design. It's a lightweight,
-            yet powerful, code editor that blends visual tools into the editor so you get the right amount of help
-            when you want it.
-        </p>
-        
-        <!--
-            WHAT IS BRACKETS?
-        -->
-        <p>
-            <em>Brackets is a different type of editor.</em>
-            Brackets has some unique features like Quick Edit, Live Preview and others that you may not find in other
-            editors. Brackets is written in JavaScript, HTML and CSS. That means that most of you using Brackets
-            have the skills necessary to modify and extend the editor. In fact, we use Brackets every day to build
-            Brackets. To learn more about how to use the key features, read on.
-        </p>
-        
-        <!--
-            GET STARTED WITH YOUR OWN FILES
-        -->
-        
-        <h3>Projects in Brackets</h3>
-        <p>
-            In order to edit your own code using Brackets, you can just open the folder containing your files.
-            Brackets treats the currently open folder as a "project"; features like Code Hints, Live Preview and
-            Quick Edit only use files within the currently open folder.
-        </p>
-        
-        <samp>
-            Once you're ready to get out of this sample project and edit your own code, you can use the dropdown
-            in the left sidebar to switch folders. Right now, the dropdown says "Getting Started" - that's the
-            folder containing the file you're looking at right now. Click on the dropdown and choose "Open Folder…"
-            to open your own folder.
-            You can also use the dropdown later to switch back to folders you've opened previously, including this
-            sample project.
-        </samp>
-        
-        <!--
-            THE RELATIONSHIP BETWEEN HTML, CSS AND JAVASCRIPT
-        -->
-        <h3>Quick Edit for CSS and JavaScript</h3>
-        <p>
-            No more switching between documents and losing your context. When editing HTML, use the
-            <kbd>Cmd/Ctrl + E</kbd> shortcut to open a quick inline editor that displays all the related CSS.
-            Make a tweak to your CSS, hit <kbd>ESC</kbd> and you're back to editing HTML, or just leave the
-            CSS rules open and they'll become part of your HTML editor. If you hit <kbd>ESC</kbd> outside of
-            a quick inline editor, they'll all collapse. Quick Edit will also find rules defined in LESS and
-            SCSS files, including nested rules.
-        </p>
-        
-        <samp>
-            Want to see it in action? Place your cursor on the <!-- <samp> --> tag above and press
-            <kbd>Cmd/Ctrl + E</kbd>. You should see a CSS quick editor appear above, showing the CSS rule that
-            applies to it. Quick Edit works in class and id attributes as well. You can use it with your
-            LESS and SCSS files also.
-            
-            You can create new rules the same way. Click in one of the <!-- <p> --> tags above and press
-            <kbd>Cmd/Ctrl + E</kbd>. There are no rules for it right now, but you can click the New Rule
-            button to add a new rule for <!-- <p> -->.
-        </samp>
-        
-        <a href="screenshots/quick-edit.png">
-            <img alt="A screenshot showing CSS Quick Edit" src="screenshots/quick-edit.png" />
-        </a>
-        
-        <p>
-            You can use the same shortcut to edit other things as well - like functions in JavaScript,
-            colors, and animation timing functions - and we're adding more and more all the time.
-        </p>
-        <p>
-            For now inline editors cannot be nested, so you can only use Quick Edit while the cursor
-            is in a "full size" editor.
-        </p>
-        
-        <!--
-            LIVE PREVIEW
-        -->
-        <h3>Preview HTML and CSS changes live in the browser</h3>
-        <p>
-            You know that "save/reload dance" we've been doing for years? The one where you make changes in
-            your editor, hit save, switch to the browser and then refresh to finally see the result?
-            With Brackets, you don't have to do that dance.
-        </p>
-        <p>
-            Brackets will open a <em>live connection</em> to your local browser and push HTML and CSS updates as you
-            type! You might already be doing something like this today with browser-based tools, but with Brackets
-            there is no need to copy and paste the final code back into the editor. Your code runs in the
-            browser, but lives in your editor!
-        </p>
-        
-        <h3>Live Highlight HTML elements and CSS rules</h3>
-        <p>
-            Brackets makes it easy to see how your changes in HTML and CSS will affect the page. When your cursor
-            is on a CSS rule, Brackets will highlight all affected elements in the browser. Similarly, when editing
-            an HTML file, Brackets will highlight the corresponding HTML elements in the browser.
-        </p>
-        
-        <samp>
-            If you have Google Chrome installed, you can try this out yourself. Click on the lightning bolt
-            icon in the top right corner of your Brackets window or hit <kbd>Cmd/Ctrl + Alt + P</kbd>. When
-            Live Preview is enabled on an HTML document, all linked CSS documents can be edited in real-time.
-            The icon will change from gray to gold when Brackets establishes a connection to your browser.
-            
-            Now, place your cursor on the <!-- <img> --> tag above. Notice the blue highlight that appears
-            around the image in Chrome. Next, use <kbd>Cmd/Ctrl + E</kbd> to open up the defined CSS rules.
-            Try changing the size of the border from 10px to 20px or change the background
-            color from "transparent" to "hotpink". If you have Brackets and your browser running side-by-side, you
-            will see your changes instantly reflected in your browser. Cool, right?
-        </samp>
-        
-        <p class="note">
-            Today, Brackets only supports Live Preview for HTML and CSS. However, in the current version, changes to
-            JavaScript files are automatically reloaded when you save. We are currently working on Live Preview
-            support for JavaScript. Live previews are also only possible with Google Chrome, but we hope
-            to bring this functionality to all major browsers in the future.
-        </p>
-        
-        <h3>Quick View</h3>
-        <p>
-            For those of us who haven't yet memorized the color equivalents for HEX or RGB values, Brackets makes
-            it quick and easy to see exactly what color is being used. In either CSS or HTML, simply hover over any
-            color value or gradient and Brackets will display a preview of that color/gradient automatically. The
-            same goes for images: simply hover over the image link in the Brackets editor and it will display a
-            thumbnail preview of that image.
-        </p>
-        
-        <samp>
-            To try out Quick View for yourself, place your cursor on the <!-- <body> --> tag at the top of this
-            document and press <kbd>Cmd/Ctrl + E</kbd> to open a CSS quick editor. Now simply hover over any of the
-            color values within the CSS. You can also see it in action on gradients by opening a CSS quick editor
-            on the <!-- <html> --> tag and hovering over any of the background image values. To try out the image
-            preview, place your cursor over the screenshot image included earlier in this document.
-        </samp>
-        
-        <h3>Need something else? Try an extension!</h3>
-        <p>
-            In addition to all the goodness that's built into Brackets, our large and growing community of
-            extension developers has built hundreds of extensions that add useful functionality. If there's
-            something you need that Brackets doesn't offer, more than likely someone has built an extension for
-            it. To browse or search the list of available extensions, choose <strong>File > Extension
-            Manager…</strong> and click on the "Available" tab. When you find an extension you want, just click
-            the "Install" button next to it.
-        </p>
-        
-        <!--
-            LET US KNOW WHAT YOU THINK
-        -->
-        <h2>Get involved</h2>
-        <p>
-            Brackets is an open-source project. Web developers from around the world are contributing to build
-            a better code editor. Many more are building extensions that expand the capabilities of Brackets.
-            Let us know what you think, share your ideas or contribute directly to the project.
-        </p>
-        <ul>
-            <li><a href="http://brackets.io">Brackets.io</a></li>
-            <li><a href="http://blog.brackets.io">Brackets Team Blog</a></li>
-            <li><a href="https://github.com/adobe/brackets">Brackets on GitHub</a></li>
-            <li><a href="https://brackets-registry.aboutweb.com">Brackets Extension Registry</a></li>
-            <li><a href="https://github.com/adobe/brackets/wiki">Brackets Wiki</a></li>
-            <li><a href="https://groups.google.com/forum/#!forum/brackets-dev">Brackets Developer Mailing List</a></li>
-            <li><a href="https://twitter.com/brackets">@brackets on Twitter</a></li>
-            <li>Chat with Brackets developers on IRC in <a href="http://webchat.freenode.net/?channels=brackets&uio=d4">#brackets on Freenode</a></li>
-        </ul>
-        
-    </body>
-</html>
-<!--
+<head>
+	<meta charset="utf-8">
+	<meta name="name" content="Concept Map" />
+	<meta name="description" content="An abstract mapping for parameters. Works best if first tag is 'unique' among the tracklist, and the second tag applies to multiple tracks"/>
+	<meta name="mintags" content="2" />
+	<meta name="maxtags" content="2" />
+	<title>Medidata Platform Visualization</title>
 
-    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
-    [::::::::::::::      ::::::::::::::]
-    [::::::::::::::      ::::::::::::::]
-    [::::::[[[[[[[:      :]]]]]]]::::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[     CODE THE WEB     ]:::::]
-    [:::::[  http://brackets.io  ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [::::::[[[[[[[:      :]]]]]]]::::::]
-    [::::::::::::::      ::::::::::::::]
-    [::::::::::::::      ::::::::::::::]
-    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+<style>
 
--->
+svg {
+    font: 12px sans-serif;
+}
+
+text {
+    pointer-events: none;
+}
+
+.inner_node rect {
+    pointer-events: all;
+}
+
+.inner_node rect.highlight {
+    stroke: #315B7E;
+    stroke-width: 2px;
+}
+
+.outer_node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+    pointer-events: all;
+}
+
+.outer_node circle.highlight
+{
+    stroke: #315B7E;
+    stroke-width: 2px;
+}
+
+.link {
+    fill: none;
+}
+
+</style>
+</head>
+<body>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script>
+//
+// Generated by the Exaile Playlist Analyzer plugin.
+// (C) 2014 Dustin Spicuzza <dustin@virtualroadside.com>
+//
+// This work is licensed under the Creative Commons Attribution 4.0
+// International License. To view a copy of this license, visit
+// http://creativecommons.org/licenses/by/4.0/.
+//
+// Inspired by http://www.findtheconversation.com/concept-map/
+// Loosely based on http://bl.ocks.org/mbostock/4063550
+//
+
+
+var data = [["iMedidata", ["RaveX", "Grants Manager", "Study Design Optimization", "CTMS", "Strategic Monitoring", "Regulated Content Manager", "swing"]], ["Trial Planning", ["brassy", "like", "calm energy", "female vocalist", "swing", "fun"]], ["Trial Start Up", ["calm energy", "instrumental", "swing", "like", "happy"]], ["Trial Execution", ["has breaks", "male vocalist", "swing", "piano", "banjo", "chill"]], ["Trial Close-Out", ["calm energy", "instrumental", "swing", "like", "interesting"]]];
+
+// transform the data into a useful representation
+// 1 is inner, 2, is outer
+
+// need: inner, outer, links
+//
+// inner:
+// links: { inner: outer: }
+
+
+var outer = d3.map();
+var inner = [];
+var links = [];
+
+var outerId = [0];
+
+data.forEach(function(d){
+
+	if (d == null)
+		return;
+
+	i = { id: 'i' + inner.length, name: d[0], related_links: [] };
+	i.related_nodes = [i.id];
+	inner.push(i);
+
+	if (!Array.isArray(d[1]))
+		d[1] = [d[1]];
+
+	d[1].forEach(function(d1){
+
+		o = outer.get(d1);
+
+		if (o == null)
+		{
+			o = { name: d1,	id: 'o' + outerId[0], related_links: [] };
+			o.related_nodes = [o.id];
+			outerId[0] = outerId[0] + 1;
+
+			outer.set(d1, o);
+		}
+
+		// create the links
+		l = { id: 'l-' + i.id + '-' + o.id, inner: i, outer: o }
+		links.push(l);
+
+		// and the relationships
+		i.related_nodes.push(o.id);
+		i.related_links.push(l.id);
+		o.related_nodes.push(i.id);
+		o.related_links.push(l.id);
+	});
+});
+
+data = {
+	inner: inner,
+	outer: outer.values(),
+	links: links
+}
+
+// sort the data -- TODO: have multiple sort options
+outer = data.outer;
+data.outer = Array(outer.length);
+
+
+var i1 = 0;
+var i2 = outer.length - 1;
+
+for (var i = 0; i < data.outer.length; ++i)
+{
+	if (i % 2 == 1)
+		data.outer[i2--] = outer[i];
+	else
+		data.outer[i1++] = outer[i];
+}
+
+console.log(data.outer.reduce(function(a,b) { return a + b.related_links.length; }, 0) / data.outer.length);
+
+
+// from d3 colorbrewer:
+// This product includes color specifications and designs developed by Cynthia Brewer (http://colorbrewer.org/).
+var colors = ["#a50026","#d73027","#f46d43","#fdae61","#fee090","#ffffbf","#e0f3f8","#abd9e9","#74add1","#4575b4","#313695"]
+var color = d3.scale.linear()
+    .domain([60, 220])
+    .range([colors.length-1, 0])
+    .clamp(true);
+
+var diameter = 960;
+var rect_width = 40;
+var rect_height = 14;
+
+var link_width = "1px";
+
+var il = data.inner.length;
+var ol = data.outer.length;
+
+var inner_y = d3.scale.linear()
+    .domain([0, il])
+    .range([-(il * rect_height)/2, (il * rect_height)/2]);
+
+mid = (data.outer.length/2.0)
+var outer_x = d3.scale.linear()
+    .domain([0, mid, mid, data.outer.length])
+    .range([15, 170, 190 ,355]);
+
+var outer_y = d3.scale.linear()
+    .domain([0, data.outer.length])
+    .range([0, diameter / 2 - 120]);
+
+
+// setup positioning
+data.outer = data.outer.map(function(d, i) {
+    d.x = outer_x(i);
+    d.y = diameter/3;
+    return d;
+});
+
+data.inner = data.inner.map(function(d, i) {
+    d.x = -(rect_width / 2);
+    d.y = inner_y(i);
+    return d;
+});
+
+
+function get_color(name)
+{
+    var c = Math.round(color(name));
+    if (isNaN(c))
+        return '#dddddd';	// fallback color
+
+    return colors[c];
+}
+
+// Can't just use d3.svg.diagonal because one edge is in normal space, the
+// other edge is in radial space. Since we can't just ask d3 to do projection
+// of a single point, do it ourselves the same way d3 would do it.
+
+
+function projectX(x)
+{
+    return ((x - 90) / 180 * Math.PI) - (Math.PI/2);
+}
+
+var diagonal = d3.svg.diagonal()
+    .source(function(d) { return {"x": d.outer.y * Math.cos(projectX(d.outer.x)),
+                                  "y": -d.outer.y * Math.sin(projectX(d.outer.x))}; })
+    .target(function(d) { return {"x": d.inner.y + rect_height/2,
+                                  "y": d.outer.x > 180 ? d.inner.x : d.inner.x + rect_width}; })
+    .projection(function(d) { return [d.y, d.x]; });
+
+
+var svg = d3.select("body").append("svg")
+    .attr("width", diameter)
+    .attr("height", diameter)
+  .append("g")
+    .attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
+
+
+// links
+var link = svg.append('g').attr('class', 'links').selectAll(".link")
+    .data(data.links)
+  .enter().append('path')
+    .attr('class', 'link')
+    .attr('id', function(d) { return d.id })
+    .attr("d", diagonal)
+    .attr('stroke', function(d) { return get_color(d.inner.name); })
+    .attr('stroke-width', link_width);
+
+// outer nodes
+
+var onode = svg.append('g').selectAll(".outer_node")
+    .data(data.outer)
+  .enter().append("g")
+    .attr("class", "outer_node")
+    .attr("transform", function(d) { return "rotate(" + (d.x - 90) + ")translate(" + d.y + ")"; })
+    .on("mouseover", mouseover)
+    .on("mouseout", mouseout);
+
+onode.append("circle")
+    .attr('id', function(d) { return d.id })
+    .attr("r", 4.5);
+
+onode.append("circle")
+    .attr('r', 20)
+    .attr('visibility', 'hidden');
+
+onode.append("text")
+	.attr('id', function(d) { return d.id + '-txt'; })
+    .attr("dy", ".31em")
+    .attr("text-anchor", function(d) { return d.x < 180 ? "start" : "end"; })
+    .attr("transform", function(d) { return d.x < 180 ? "translate(8)" : "rotate(180)translate(-8)"; })
+    .text(function(d) { return d.name; });
+
+// inner nodes
+
+var inode = svg.append('g').selectAll(".inner_node")
+    .data(data.inner)
+  .enter().append("g")
+    .attr("class", "inner_node")
+    .attr("transform", function(d, i) { return "translate(" + d.x + "," + d.y + ")"})
+    .on("mouseover", mouseover)
+    .on("mouseout", mouseout);
+
+inode.append('rect')
+    .attr('width', rect_width)
+    .attr('height', rect_height)
+    .attr('id', function(d) { return d.id; })
+    .attr('fill', function(d) { return get_color(d.name); });
+
+inode.append("text")
+	.attr('id', function(d) { return d.id + '-txt'; })
+    .attr('text-anchor', 'middle')
+    .attr("transform", "translate(" + rect_width/2 + ", " + rect_height * .75 + ")")
+    .text(function(d) { return d.name; });
+
+// need to specify x/y/etc
+
+d3.select(self.frameElement).style("height", diameter - 150 + "px");
+
+function mouseover(d)
+{
+	// bring to front
+	d3.selectAll('.links .link').sort(function(a, b){ return d.related_links.indexOf(a.id); });
+
+    for (var i = 0; i < d.related_nodes.length; i++)
+    {
+        d3.select('#' + d.related_nodes[i]).classed('highlight', true);
+        d3.select('#' + d.related_nodes[i] + '-txt').attr("font-weight", 'bold');
+    }
+
+    for (var i = 0; i < d.related_links.length; i++)
+        d3.select('#' + d.related_links[i]).attr('stroke-width', '5px');
+}
+
+function mouseout(d)
+{
+    for (var i = 0; i < d.related_nodes.length; i++)
+    {
+        d3.select('#' + d.related_nodes[i]).classed('highlight', false);
+        d3.select('#' + d.related_nodes[i] + '-txt').attr("font-weight", 'normal');
+    }
+
+    for (var i = 0; i < d.related_links.length; i++)
+        d3.select('#' + d.related_links[i]).attr('stroke-width', link_width);
+}
+
+</script>
