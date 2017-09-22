@@ -237,7 +237,7 @@ var onode = svg.append('g').selectAll(".outer_node")
     .attr("transform", function(d) { return "rotate(" + (d.x - 90) + ")translate(" + d.y + ")"; })
     .on("mouseover", mouseover)
     .on("mouseout", mouseout)
-    .on("click", function() { window.open("https://saif429.github.io/Medidata_Visual/#test1.html"); });
+    .on("click", function() { window.open("https://saif429.github.io/Medidata_Visual/#test1.html", "_self"); });
 
 onode.append("circle")
     .attr('id', function(d) { return d.id })
