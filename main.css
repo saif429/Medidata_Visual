@@ -58,3 +58,7 @@ img {
         filter: grayscale(0%);
     }
 }
+
+.boxed {
+  border: 1px solid green ;
+}
