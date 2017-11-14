@@ -53,8 +53,6 @@ text {
 //
 
 var data = [["iMedidata", ["RaveX/Rave", "Grants Manager", "Study Design Optimization", "CTMS", "Strategic Monitoring", "Balance", "Coder", "Safety Gateway", "Medical Imaging", "ePRO", "AppConnect", "Payments", "eConsent/Medidata Enroll", "SensorLink", "OPAL", "CSA", "Insights", "TotalView"]], ["Trial Planning", ["Grants Manager Planning", "Study Design Optimization", "Synthetic Control Arms", "Genomics"]], ["Trial Start Up", ["CTMS", "Grants Manager Contracting", "Strategic Monitoring", "Regulated Content Management"]], ["Trial Execution", ["RaveX/Rave", "Balance", "Coder", "Rave Safety Gateway", "Medical Imaging", "Patient Cloud", "Payments"]], ["Trial Close-Out", ["OPAL", "CSA", "Insights", "TotalView"]]];
-
-//var a=800,c=800,h=c,U=200,K=22,S=20,s=8,R=110,J=30,o=15,t=10,w=1000,F="elastic",N="#0da4d3";var T,q,x,j,H,A,P;var L={},k={};var i,y;var r=d3.layout.tree().size([360,h/2-R]).separation(function(Y,X){return(Y.parent==X.parent?1:2)/Y.depth});var W=d3.svg.diagonal.radial().projection(function(X){return[X.y,X.x/180*Math.PI]});var v=d3.svg.line().x(function(X){return X[0]}).y(function(X){return X[1]}).interpolate("bundle").tension(0.5);var d=d3.select("#"+chartElementId).append("svg").attr("width",a).attr("height",c).append("g").attr("transform","translate("+a/2+","+c/2+")");var I=d.append("rect").attr("class","bg").attr({x:a/-2,y:c/-2,width:a,height:c,fill:"transparent"}).on("click",O);var B=d.append("g").attr("class","links"),f=d.append("g").attr("class","ditems"),E=d.append("g").attr("class","nodes");var Q=d3.select("#"+infoElementId);
 	
 // transform the data into a useful representation
 // 1 is inner, 2, is outer
@@ -189,9 +187,12 @@ var onode = svg.append('g').selectAll(".outer_node")
     .on("mouseout", mouseout)
     .on("click", click);
 
-function click (d){
-		window.open("https://saif429.github.io/Medidata_Visual/#"+d.id+".html", "_self");
-}
+//function click (d){
+//		window.open("https://saif429.github.io/Medidata_Visual/#"+d.id+".html", "_self");
+//}
+
+var a=800,c=800,h=c,U=200,K=22,S=20,s=8,R=110,J=30,o=15,t=10,w=1000,F="elastic",N="#0da4d3";var T,q,x,j,H,A,P;var L={},k={};var i,y;var r=d3.layout.tree().size([360,h/2-R]).separation(function(Y,X){return(Y.parent==X.parent?1:2)/Y.depth});var W=d3.svg.diagonal.radial().projection(function(X){return[X.y,X.x/180*Math.PI]});var v=d3.svg.line().x(function(X){return X[0]}).y(function(X){return X[1]}).interpolate("bundle").tension(0.5);var d=d3.select("#"+chartElementId).append("svg").attr("width",a).attr("height",c).append("g").attr("transform","translate("+a/2+","+c/2+")");var I=d.append("rect").attr("class","bg").attr({x:a/-2,y:c/-2,width:a,height:c,fill:"transparent"}).on("click",O);var B=d.append("g").attr("class","links"),f=d.append("g").attr("class","ditems"),E=d.append("g").attr("class","nodes");var Q=d3.select("#"+d.id);
+
 onode.append("circle")
     .attr('id', function(d) { return d.id })
     .attr("r", 4.5);
