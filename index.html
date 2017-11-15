@@ -188,9 +188,9 @@ var onode = svg.append('g').selectAll(".outer_node")
     .on("mouseout", mouseout)
     .on("click", click);
 
-function click (d){
-		window.open("https://saif429.github.io/Medidata_Visual/#"+d.id+".html", "_self");
-}
+//function click (d){
+//		window.open("https://saif429.github.io/Medidata_Visual/#"+d.id+".html", "_self");
+//}
 
 onode.append("circle")
     .attr('id', function(d) { return d.id })
